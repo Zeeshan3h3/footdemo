@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoleCraft — Walk Your Story | Premium Footwear</title>
+  <meta name="description"
+    content="SoleCraft – Premium footwear designed for comfort, style, and your everyday journey. Shop sneakers, casuals, formals & more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ══════════ STICKY NAVBAR ══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">👟</span>
+        <span class="logo-text">Sole<span class="accent">Craft</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="searchToggle" aria-label="Search">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="9" r="7" />
+            <line x1="14" y1="14" x2="19" y2="19" />
+          </svg>
+        </button>
+        <button class="nav-icon-btn wishlist-btn" aria-label="Wishlist">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M12 21C12 21 3 13.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.09C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 13.5 14 21 14 21"
+              transform="translate(-3,-2) scale(0.95)" />
+          </svg>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="nav-icon-btn cart-btn" id="cartToggle" aria-label="Cart">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" transform="translate(-1,-1) scale(0.9)" />
+            <line x1="3" y1="6" x2="21" y2="6" transform="translate(-1,-1) scale(0.9)" />
+            <path d="M8 10a4 4 0 008 0" transform="translate(-1,-1) scale(0.9)" />
+          </svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-inner">
+        <input type="text" id="searchInput" placeholder="Search for shoes, sneakers, formals..." autocomplete="off" />
+        <button class="search-close" id="searchClose">&times;</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO SECTION ══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero_bg.png" alt="SoleCraft Hero" class="hero-bg-img" />
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-badge fade-up">✦ Premium Indian Footwear — Est. 2021</p>
+      <h1 class="hero-title fade-up">
+        Walk With <span class="accent">Confidence.</span><br />
+        Walk With <span class="accent">SoleCraft.</span>
+      </h1>
+      <p class="hero-sub fade-up">Premium footwear designed for comfort, style, and your everyday journey.</p>
+      <div class="hero-ctas fade-up">
+        <a href="#products" class="btn btn-primary">🟠 Shop Now</a>
+        <a href="#categories" class="btn btn-outline">Explore Collection →</a>
+      </div>
+      <div class="hero-stats fade-up">
+        <div class="stat"><strong>50K+</strong><span>Happy Customers</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>4.8★</strong><span>Average Rating</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>200+</strong><span>Styles Available</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE BANNER ══════════ -->
+  <div class="marquee-banner">
+    <div class="marquee-track">
+      <span>✦ FREE DELIVERY</span>
+      <span>✦ 7-DAY RETURNS</span>
+      <span>✦ premium quality</span>
+      <span>✦ made in india</span>
+      <span>✦ 50,000+ happy feet</span>
+      <span>✦ FREE DELIVERY</span>
+      <span>✦ 7-DAY RETURNS</span>
+      <span>✦ premium quality</span>
+      <span>✦ made in india</span>
+      <span>✦ 50,000+ happy feet</span>
+    </div>
+  </div>
+
+  <!-- ══════════ FEATURED PRODUCTS ══════════ -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag fade-up">Our Bestsellers</p>
+        <h2 class="section-title fade-up">Featured <span class="accent">Collection</span></h2>
+        <p class="section-sub fade-up">Handpicked styles our customers love the most</p>
+      </div>
+      <div class="product-filters fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sneakers">Sneakers</button>
+        <button class="filter-btn" data-filter="casual">Casual</button>
+        <button class="filter-btn" data-filter="formal">Formal</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ LIFESTYLE BANNER ══════════ -->
+  <section class="lifestyle-banner">
+    <div class="lifestyle-content fade-up">
+      <p class="lifestyle-tag">Every Step Tells Your Story</p>
+      <h2 class="lifestyle-title">"Made for your<br />everyday hustle"</h2>
+      <p class="lifestyle-sub">Comfort that stays with you all day. Style that speaks before you do.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ CATEGORIES ══════════ -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag fade-up">Browse By Style</p>
+        <h2 class="section-title fade-up">Shop by <span class="accent">Category</span></h2>
+      </div>
+      <div class="categories-grid fade-up">
+        <div class="category-card">
+          <img src="images/cat_men.png" alt="Men's Collection" class="cat-bg-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Men's Collection</h3>
+            <p>Bold designs for the modern man</p>
+            <a href="#" class="btn btn-sm btn-outline">Shop Now →</a>
+          </div>
+        </div>
+        <div class="category-card">
+          <img src="images/cat_women.png" alt="Women's Collection" class="cat-bg-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Women's Collection</h3>
+            <p>Elegance meets everyday comfort</p>
+            <a href="#" class="btn btn-sm btn-outline">Shop Now →</a>
+          </div>
+        </div>
+        <div class="category-card">
+          <img src="images/cat_sports.png" alt="Sports Shoes" class="cat-bg-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Sports Shoes</h3>
+            <p>Built for performance & speed</p>
+            <a href="#" class="btn btn-sm btn-outline">Shop Now →</a>
+          </div>
+        </div>
+        <div class="category-card" style="--cat-bg: linear-gradient(135deg, #4a3728, #2d1f16)">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Casual Wear</h3>
+            <p>Laid-back style for every day</p>
+            <a href="#" class="btn btn-sm btn-outline">Shop Now →</a>
+          </div>
+        </div>
+        <div class="category-card" style="--cat-bg: linear-gradient(135deg, #1a1a2e, #0d0d1a)">
+          <div class="cat-overlay"></div>
+          <div class="cat-content">
+            <h3>Formal Shoes</h3>
+            <p>Step into every meeting with confidence</p>
+            <a href="#" class="btn btn-sm btn-outline">Shop Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ WHY CHOOSE US ══════════ -->
+  <section class="section trust-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag fade-up">Why SoleCraft?</p>
+        <h2 class="section-title fade-up">Built on <span class="accent">Trust</span></h2>
+      </div>
+      <div class="trust-grid fade-up">
+        <div class="trust-card">
+          <div class="trust-icon">✅</div>
+          <h3>Premium Quality</h3>
+          <p>Handcrafted with the finest materials for lasting comfort and durability.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🚚</div>
+          <h3>Free Delivery</h3>
+          <p>Free shipping across India on every order. No hidden charges.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">🔄</div>
+          <h3>Easy 7-Day Returns</h3>
+          <p>Not satisfied? Return within 7 days — no questions asked.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">💳</div>
+          <h3>Secure Payments</h3>
+          <p>100% secure checkout with UPI, Cards, Net Banking & COD.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SPECIAL OFFER ══════════ -->
+  <section class="offer-section">
+    <div class="offer-inner fade-up">
+      <div class="offer-badge">🔥 LIMITED TIME OFFER</div>
+      <h2 class="offer-title">Flat <span class="accent">25% OFF</span> on Your First Order</h2>
+      <p class="offer-sub">Use Code: <span class="offer-code">SOLE25</span></p>
+      <a href="#products" class="btn btn-primary btn-lg">Grab Deal Now →</a>
+      <p class="offer-note">*Valid on orders above ₹999. Limited period offer.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ CUSTOMER REVIEWS ══════════ -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag fade-up">Customer Love</p>
+        <h2 class="section-title fade-up">What People <span class="accent">Say</span></h2>
+      </div>
+      <div class="reviews-carousel fade-up" id="reviewsCarousel">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Super comfortable! I wear them daily and still feel fresh. Best purchase in months!"
+          </p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #E8913A, #d4792e)">RS</div>
+            <div>
+              <strong>Rahul Sharma</strong>
+              <span>Kolkata • Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"Stylish and affordable. Got many compliments at work! The quality is impressive for
+            the price."</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #8B5CF6, #6D28D9)">AD</div>
+            <div>
+              <strong>Ananya Das</strong>
+              <span>Delhi • Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Best sneakers I've bought in this price range. The cushioning is next level. 100%
+            recommend!"</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #059669, #047857)">AM</div>
+            <div>
+              <strong>Arjun Mehta</strong>
+              <span>Mumbai • Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Ordered formal shoes for my wedding. Perfect fit, premium feel. SoleCraft is now my
+            go-to brand!"</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: linear-gradient(135deg, #DC2626, #B91C1C)">PK</div>
+            <div>
+              <strong>Priya Kumari</strong>
+              <span>Bangalore • Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ LIFESTYLE GALLERY ══════════ -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag fade-up">Built for Real Life</p>
+        <h2 class="section-title fade-up">The SoleCraft <span class="accent">Lifestyle</span></h2>
+      </div>
+      <div class="gallery-grid fade-up">
+        <div class="gallery-item gi-tall">
+          <img class="gallery-img" src="images/gallery_city.png" alt="City Walks" />
+          <div class="gallery-overlay"><span>City Walks</span></div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="images/gallery_gym.png" alt="Gym Ready" />
+          <div class="gallery-overlay"><span>Gym Ready</span></div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="images/gallery_cafe.png" alt="Casual Outings" />
+          <div class="gallery-overlay"><span>Casual Outings</span></div>
+        </div>
+        <div class="gallery-item gi-wide">
+          <img class="gallery-img" src="images/gallery_travel.png" alt="Travel Adventures" />
+          <div class="gallery-overlay"><span>Travel Adventures</span></div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="images/gallery_night.png" alt="Night Outs" />
+          <div class="gallery-overlay"><span>Night Outs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ NEWSLETTER ══════════ -->
+  <section class="newsletter-section" id="contact">
+    <div class="container">
+      <div class="newsletter-inner fade-up">
+        <div class="newsletter-text">
+          <h2>Get Exclusive Deals &<br /><span class="accent">New Arrivals</span></h2>
+          <p>Join 20,000+ shoe lovers. Be the first to know about drops, discounts, and style tips.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">👟</span>
+            <span class="logo-text">Sole<span class="accent">Craft</span></span>
+          </a>
+          <p>"Walk Your Story" — Premium footwear crafted in Kolkata, India. Made with love since 2021.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#products">Shop All</a>
+          <a href="#categories">Categories</a>
+          <a href="#about">About Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#">Track Order</a>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <a href="#">Size Guide</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">FAQs</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 Park Street, Kolkata<br />West Bengal, India</p>
+          <p>📞 +91 98765 43210</p>
+          <p>📧 hello@solecraft.in</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SoleCraft. All rights reserved. | Made with ❤️ in India</p>
+        <div class="payment-icons">
+          <span>UPI</span>
+          <span>Visa</span>
+          <span>MC</span>
+          <span>COD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ PRODUCT QUICK VIEW MODAL ══════════ -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <div class="modal-main-img" id="modalMainImg"></div>
+          <div class="modal-thumbs" id="modalThumbs"></div>
+        </div>
+        <div class="modal-info">
+          <span class="modal-badge">★ Bestseller</span>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <div class="modal-price">
+            <span class="price-current" id="modalPrice"></span>
+            <span class="price-original" id="modalOriginal"></span>
+            <span class="price-discount" id="modalDiscount"></span>
+          </div>
+          <div class="modal-rating" id="modalRating"></div>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-options">
+            <div class="option-group">
+              <label>Size</label>
+              <div class="size-options" id="sizeOptions">
+                <button class="size-btn">6</button>
+                <button class="size-btn">7</button>
+                <button class="size-btn active">8</button>
+                <button class="size-btn">9</button>
+                <button class="size-btn">10</button>
+              </div>
+            </div>
+            <div class="option-group">
+              <label>Color</label>
+              <div class="color-options" id="colorOptions">
+                <button class="color-swatch" style="background:#1a1a1a" title="Black"></button>
+                <button class="color-swatch active" style="background:#f5f5dc" title="Cream"></button>
+                <button class="color-swatch" style="background:#8B4513" title="Brown"></button>
+              </div>
+            </div>
+          </div>
+          <p class="stock-indicator">🔥 Only <strong>5</strong> left in stock!</p>
+          <div class="modal-actions">
+            <button class="btn btn-primary btn-lg" id="modalAddCart">Add to Cart</button>
+            <button class="btn btn-accent btn-lg">Buy Now</button>
+          </div>
+          <div class="modal-trust">
+            <span>✅ Genuine Product</span>
+            <span>🚚 Free Delivery</span>
+            <span>🔄 7-Day Returns</span>
+          </div>
+          <div class="modal-tabs">
+            <button class="tab-btn active" data-tab="description">Description</button>
+            <button class="tab-btn" data-tab="reviews">Reviews</button>
+            <button class="tab-btn" data-tab="sizeguide">Size Guide</button>
+          </div>
+          <div class="tab-content active" id="tabDescription">
+            <p>Lightweight, breathable mesh upper with a cushioned insole for all-day comfort. The durable rubber
+              outsole provides excellent grip on any surface. Perfect for daily wear, light workouts, and casual
+              outings.</p>
+          </div>
+          <div class="tab-content" id="tabReviews">
+            <div class="mini-review">
+              <strong>Amit K.</strong> ★★★★★
+              <p>"Extremely comfortable. I've been wearing these for 3 months straight."</p>
+            </div>
+            <div class="mini-review">
+              <strong>Sneha R.</strong> ★★★★☆
+              <p>"Love the design! Slightly narrow but otherwise perfect."</p>
+            </div>
+          </div>
+          <div class="tab-content" id="tabSizeguide">
+            <table class="size-table">
+              <tr>
+                <th>UK</th>
+                <th>US</th>
+                <th>EU</th>
+                <th>CM</th>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>40</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>41</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>42</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>43</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>44</td>
+                <td>29</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ CART SIDEBAR ══════════ -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cartClose">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty">
+          <span>👟</span>
+          <p>Your cart is empty</p>
+          <a href="#products" class="btn btn-primary btn-sm">Start Shopping</a>
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display:none">
+        <div class="coupon-input">
+          <input type="text" placeholder="Coupon code" id="couponInput" />
+          <button class="btn btn-sm btn-outline" id="applyCoupon">Apply</button>
+        </div>
+        <div class="cart-summary">
+          <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+          <div class="summary-row"><span>Delivery</span><span class="free-delivery">FREE</span></div>
+          <div class="summary-row total"><span>Total</span><span id="cartTotal">₹0</span></div>
+        </div>
+        <button class="btn btn-primary btn-lg btn-full">Proceed to Checkout</button>
+        <div class="trust-badges-mini">
+          <span>🔒 Secure Checkout</span>
+          <span>📦 Free Shipping</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ TOAST NOTIFICATION ══════════ -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-text" id="toastText">Added to cart!</span>
+  </div>
+
+  <!-- ══════════ BACK TO TOP ══════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
